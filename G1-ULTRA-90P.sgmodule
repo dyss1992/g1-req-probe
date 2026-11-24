@@ -3,7 +3,7 @@
 #!system=ios
 
 [Script]
-g1-ultra-90p = type=http-response,pattern=^https:\/\/one\.google\.com\/,requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/dyss1992/g1-req-probe@master/g1-ultra-90p.js
+g1-ultra-90p = type=http-response,pattern=^https:\/\/one\.google\.com\/,requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/dyss1992/g1-req-probe@b2b1e66/g1-ultra-90p.js
 
 [MITM]
 hostname = %APPEND% one.google.com
