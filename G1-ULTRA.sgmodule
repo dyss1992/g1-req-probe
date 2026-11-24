@@ -1,0 +1,9 @@
+#!name=G1 ULTRA
+#!desc=Ultra 20x/30x：/ai? 响应里把新版动态 id 换成老版静态 id（20tb.m.v2→20tb.m，30tb.ai.pro.m→30tb.m），价格看 iOS 付款面板
+#!system=ios
+
+[Script]
+g1-ultra = type=http-response,pattern=^https:\/\/one\.google\.com\/ai\?,requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/dyss1992/g1-req-probe@master/g1-ultra-map.js
+
+[MITM]
+hostname = %APPEND% one.google.com
