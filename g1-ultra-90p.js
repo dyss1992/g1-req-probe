@@ -13,8 +13,12 @@
   if (typeof body !== "string") { $done({}); return; }
 
   var MAP = [
-    ["20tb\\.m\\.v2", "g1.20tb.3months_ip_90p.acq"],
-    ["30tb\\.ai\\.pro\\.m", "g1.ai.ultra.3months_ip_90p.acq"]
+    ["g1\\.ios\\.20tb\\.m\\.v2", "g1.20tb.3months_ip_90p.acq"],
+    ["g1\\.20tb\\.v2", "g1.20tb.3months_ip_90p.acq"],
+    ["g1\\.play\\.20tb", "g1.20tb.3months_ip_90p.acq"],
+    ["g1\\.ios\\.30tb\\.ai\\.pro\\.m", "g1.ai.ultra.3months_ip_90p.acq"],
+    ["g1\\.30tb\\.ai\\.pro\\.m", "g1.ai.ultra.3months_ip_90p.acq"],
+    ["g1\\.play\\.ai\\.pro", "g1.ai.ultra.3months_ip_90p.acq"]
   ];
   var hits = [];
   var out = body;
