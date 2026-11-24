@@ -1,0 +1,9 @@
+#!name=G1 REQ
+#!desc=请求侧改写：把 App 选档时发给 Google 的 sku 换成 90p 候选，让服务端做资格校验（配合查询/收银台使用）
+#!system=ios
+
+[Script]
+g1-req = type=http-request,pattern=^https:\/\/one\.google\.com\/_\/(?:Subscriptions(?:Management|NonOgb)Ui)\/data\/batchexecute,requires-body=1,max-size=0,script-path=https://cdn.jsdelivr.net/gh/dyss1992/g1-req-probe@master/g1-req-probe.js
+
+[MITM]
+hostname = %APPEND% one.google.com
